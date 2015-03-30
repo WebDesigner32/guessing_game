@@ -1,0 +1,20 @@
+<script>
+  (function() {
+    var answer = 4200;
+
+    var guess = prompt('Guess the lengthy number. Good luck!');
+    guess = Number.parseInt(guess);
+    while (true) {
+      if (guess === answer) {
+        alert('You got it right! You should feel pretty good.');
+        break;
+      } else if (guess < answer) {
+        guess = Number.parseInt(prompt('Too low, guess again. Sorry, this might take awhile.'));
+      } else if (guess > answer) {
+        guess = Number.parseInt(prompt('Too high, guess again. Sorry, this might take awhile.'));
+      }
+    }
+
+    alert('You should feel good about your hardwork. Pat on the back.');
+  })();
+</script>
