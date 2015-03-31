@@ -13,8 +13,16 @@
       } else if (guess > answer) {
         guess = Number.parseInt(prompt('Too high, guess again. Sorry, this might take awhile.'));
       }
-    }
 
-    alert('You should feel good about your hardwork. Pat on the back.');
-  })();
+      alert('You should feel good about your hardwork. Pat on the back.');
+     }
+   })();
+
+   var greet = (function(name,age) {
+        name = name || 'Carl ';
+         age = age || 29;
+        alert('Hello, My name is ' + name + 'My age is : ' + age);
+
+      }) ();
+
 </script>
